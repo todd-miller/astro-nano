@@ -15,3 +15,21 @@ export type Socials = {
   NAME: string;
   HREF: string;
 }[];
+
+export type SocialIcon = Record<string, string | any>;
+
+export type Basics = {
+  name: string;
+  label: string;
+  image: string;
+  email: email;
+  phone: string;
+  url: string;
+  summary: string[];
+  theme: string;
+  location: {
+    city: string;
+    countryCode: string;
+    region: string;
+  }
+}

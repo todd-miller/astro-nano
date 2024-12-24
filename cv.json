@@ -1,0 +1,412 @@
+{
+  "basics": {
+    "name": "Todd Miller",
+    "label": "Sr Systems Software Engineer",
+    "image": "/me_avatar.jpg",
+    "email": "t.miller07@gmail.com",
+    "phone": "+1 216-307-1407",
+    "url": "https://todd-miller.dev",
+    "summary": [
+      "Hello! I'm Todd, a web developer with a passion for creating tools and solutions that simplify and enhance everyday tasks. I greatly enjoy continuous learning and am always exploring strategies and technologies to refine my skills and expand my toolkit.",
+      "When I’m not coding, I enjoy spending time with my wife and two dogs, skateboarding, reading, and diving into board games of all varieties. These hobbies inspire my creativity and enhance my problem-solving skills. I am excited about the opportunity to contribute to meaningful projects and collaborate with others who share my vision for a more efficient world."
+    ],
+    "theme": "red",
+    "location": {
+      "city": "Cleveland",
+      "countryCode": "USA",
+      "region": "Ohio"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "todd-miller",
+        "url": "https://linkedin.com/in/todd-miller-a97030134"
+      },
+      {
+        "network": "GitHub",
+        "username": "todd-miller",
+        "url": "https://github.com/todd-miller"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Bridgestone Americas Technology Center",
+      "position": "Sr. Systems Engineer ",
+      "location_type": "Remote",
+      "location": "Akron, Ohio",
+      "url": "https://www.bridgestoneamericas.com/",
+      "startDate": "2023-07-18",
+      "endDate": null,
+      "summary": "Worked on internal engineering platform and HPC infrastructure. Helped migrate portions of the platform to AWS, led systems decoupling effort to protect the future health and integrity of the platform",
+      "highlights": [
+        "Created a new, easily adoptable, easily tested methodology for graphics rendering on the client",
+        "Created and implemented a global strategy for continual integration & upgrading"
+      ],
+      "responsibilities": [
+        "Led platform CI/CD migration to AWS to increase throughput by re-architecting docker image creation, rewriting CI/CD pipelines, and rolling out to international development team.",
+        "Crafted detailed proposals that outlined operational cost, risk, and schedule impacts to inform and advise senior technical and non-technical staff on critical platform decisions, helping to ensure project alignment with business objectives.",
+        "Designed and developed large-scale features that enhanced core application functionality and responsiveness, driving innovation and enabling agile adaptation to evolving engineering demands and ultimately improving customer satisfaction.",
+        "Re-engineered client graphics system to simplify platform maintenance with a test-forwards approach, accelerating the delivery of new complex features with a high degree of quality.",
+        "Mentored & collaborated with other developers to help foster a high-performance, team culture through paired programming, code design reviews, and in-depth pull request reviews which led to faster onboarding processes, improved team productivity, and a strong quality-first culture.",
+        "Decreased labor costs and enshrined core business IP & data by translating brittle legacy scripts and unstructured file-based data storage into a robust, structured and well documented, globally-applicable platform feature.",
+        "Developed, pitched, and secured funding for an expert system to empower users to perform quarterly platform “rule updates”. Proposed system is projected to reduce development and maintenance costs by 80% and lead to 100x quicker rule generation",
+        "Created several microservices and proof of concepts to illuminate new solutions and drive progress"
+      ],
+      "achievements": [
+        "Created and implemented a global Platform upgrade strategy after 2yrs of failed effort."
+      ],
+      "skills": [
+        "React",
+        "Python",
+        "JavaScript",
+        "MongoDB",
+        "Docker",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Landi Industries",
+      "position": "Staff Software Developer",
+      "location_type": "Remote",
+      "location": "Akron, Ohio",
+      "url": "landiindustries.com",
+      "startDate": "2021-9-01",
+      "endDate": "2023-06-20",
+      "summary": "",
+      "highlights": [
+        "Served as Technical and Team Lead, overseeing a team of six developers. Distilled technical requirements, planned stories, scoped sprints and helped accomplish sprint goals."
+      ],
+      "responsibilities": [
+        "Communicated roadblocks, technical achievements, best practices and “philosophy of approach” to clients to facilitate good trust and transparency of work.",
+        "Raised concerns over client platform’s security vulnerabilities which resulted in an outside pentest confirming the vulnerabilities and prioritizing  the re-engineering of the platform’s JWT authentication scheme to leverage Microsoft’s Authentication Library (MSAL). This process mitigated substantial risks to sensitive data and facilitated deeper trust with our client.",
+        "Attacked client’s growing technical debt and need for extensive refactors to enable new features by implementing the first end-to-end tests for a legacy, multi-client platform. E2e tests provided essential coverage that facilitated large-scale refactors while ensuring system stability.",
+        "Conducted business critical technical spikes and evaluations of tooling and frameworks to reduce development costs and refine the project direction and timeline, leading to an optimized schedule and more accurate cost of delivery.",
+        "Created UML and system architecture diagrams that enhanced communication between clients and the team, serving as crucial foundational documentation for onboarding new developers. This initiative improved knowledge transfer and reduced onboarding time, increasing team velocity and quality"
+      ],
+      "achievements": [
+        "Mentored developers, instilling best practices that focused on  the development of easily tested, low-maintenance features, which not only met high-quality standards but also reduced time spent on rework, thereby enhancing overall efficiency."
+      ],
+      "skills": [
+        "TypeScript",
+        "React",
+        "MongoDB",
+        "MySQL",
+        "Docker",
+        "K8",
+        "Azure",
+        "Github Actions",
+        "Bash"
+      ]
+    },
+    {
+      "name": "Bridgestone Americas Technology Center",
+      "position": "Sr. Software Engineer ",
+      "location_type": "Remote",
+      "location": "Akron, Ohio",
+      "url": "https://www.bridgestoneamericas.com/",
+      "startDate": "2018-11-26",
+      "endDate": "2021-09-21",
+      "summary": "",
+      "responsibilities": [
+        "Designed and coordinated the implementation of large-scale features across a multi-national team, ensuring seamless collaboration and project success.",
+        "Contributed to the optimization and expansion of a robust geometry engine (ex. vectorization of Cardano's method for intersections between Bezier curves and straight lines for a 100x speed improvement.)",
+        "Developed and tested half-edge algorithms to 'clip', 'fill', and manipulate geometry for more accurate virtual tire modeling. This allowed for more robust creation & analysis of virtual tires saving schedule and material waste by reducing the number of physical molds needed for developing a new tire.",
+        "Developed initial React unit tests for a newly adopted framework, improving code reliability and maintainability.",
+        "Prepared and delivered technical presentations to minimize system maintenance costs and enhanced training for peers."
+      ],
+      "highlights": [],
+      "skills": [
+        "Python",
+        "Numpy",
+        "JavaScript",
+        "React",
+        "MongoDB",
+        "Atlassian"
+      ]
+    },
+    {
+      "name": "Kenda American Technical Center",
+      "position": "Research Engineer & Software Developer",
+      "location_type": "On Prem",
+      "location": "Akron, Ohio",
+      "url": "https://automotive.kendatire.com/en-us/",
+      "startDate": "2017-05-26",
+      "endDate": "2018-11-21",
+      "summary": "",
+      "responsibilities": [
+        "Planned, developed, tested and deployed full stack environment for automated and assisted engineering analysis using MySQL, Python/Django/DRF, Node/AngularJS/Angular",
+        "Designed, implemented, documented a RESTful API for future and current integration with CATIA, and other internal applications",
+        "Automated and improved upon the analysis of test results for development engineers",
+        "Mentored other team members with regards to program architecture and 'pythonic' philosophy"
+      ],
+      "highlights": [],
+      "skills": [
+        "AngularJS",
+        "Angular",
+        "Python",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Honda R&D Americas",
+      "position": "Simulation Engineer II",
+      "location_type": "On Prem",
+      "location": "Marysville, Ohio",
+      "url": "https://www.hondaresearch.com",
+      "startDate": "2014-12-01",
+      "endDate": "2017-03-01",
+      "summary": "Created standards, methods, processes, and procedures for reviewing and evaluating projects throughout the development",
+      "responsibilities": [
+        "Responsible for Linear Dynamics Methodology development, management, planning, and improvements",
+        "Recommended and executed plans to improve development tools and processes"
+      ],
+      "highlights": [
+        "Increased department efficiency by writing several pre & post-processing tools in Python"
+      ],
+      "skills": [
+        "Python",
+        "MATLAB",
+        "NASTRAN"
+      ]
+    },
+    {
+      "name": "Honda R&D Americas",
+      "position": "NVH Engineer",
+      "location_type": "On Prem",
+      "location": "Marysville, Ohio",
+      "url": "https://www.hondaresearch.com",
+      "startDate": "2012-06-18",
+      "endDate": "2014-12-01",
+      "summary": "Ensured that developed vehicles met targets for Noise and Vibration and passed all regulatory tests",
+      "responsibilities": [
+        "Planned, scheduled and coordinated detailed phases of large-scale projects",
+        "Assessed & adapted prototype model performance with respect to noise and vibration"
+      ],
+      "highlights": [
+        "Simulation-driven design of intake and exhaust systems that were then prototyped, tuned and tested",
+        "Created an educational attenuation rig where visiting students could learn about sound and how intakes and exhausts are designed."
+      ],
+      "skills": [
+        "Python",
+        "MATLAB"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Bamako International School",
+      "position": "Volunteer",
+      "url": "",
+      "startDate": "2017-03-01",
+      "endDate": "2017-05-01",
+      "summary": "Tutored Highschool Mathematics",
+      "highlights": [
+        ""
+      ]
+    },
+    {
+      "organization": "Wind Powered Aircraft",
+      "position": "Volunteer",
+      "url": "",
+      "startDate": "2017-03-01",
+      "endDate": "2017-05-01",
+      "summary": "Tutored Python Programming",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Cincinnati",
+      "url": "https://www.uc.edu",
+      "area": "Mechanical Engineering",
+      "studyType": "Bachelor",
+      "startDate": "2007-09-01",
+      "endDate": "2012-05-01",
+      "score": "3.5"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Full Stack Web Development",
+      "date": "2023-05-01",
+      "issuer": "Online University",
+      "url": "https://onlineuniversity.com/certificates/fullstack"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Github",
+      "level": "Intermediate",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code",
+        "Continual Integration",
+        "Enterprise Organization Management"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend"
+      ]
+    },
+    {
+      "name": "CSS",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "Fullstack"
+      ]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "CSS Framework",
+        "Responsive Design"
+      ]
+    },
+    {
+      "name": "MongoDB",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Docker",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Cypress",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Astro",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Numpy",
+      "level": "Advanced",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "Intermediate",
+      "keywords": []
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Node",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Backend",
+        "JavaScript",
+        "Server"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "level": "Intermediate",
+      "keywords": [
+        "Databases",
+        "SQL",
+        "Data Storage",
+        "Backend"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Advanced",
+      "keywords": [
+        "Version Control",
+        "Collaboration",
+        "Source Code"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "React Framework",
+        "SSR",
+        "Static Generation"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Frontend",
+        "JavaScript Library",
+        "UI"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "Advanced",
+      "keywords": [
+        "Web Development",
+        "Engineering",
+        "Mathematics",
+        "Data Science"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Personal Portfolio",
+      "isActive": false,
+      "description": "A personal portfolio website to showcase my projects and skills.",
+      "highlights": [
+        "Built with Astro and Tailwind CSS",
+        "Includes a blog and contact form"
+      ],
+      "url": "https://johndoe.dev",
+      "github": "https://github.com"
+    },
+    {
+      "name": "Weather App",
+      "isActive": true,
+      "description": "A web application that provides weather information for any location.",
+      "highlights": [
+        "Built with JavaScript and OpenWeatherMap API",
+        "Responsive design"
+      ],
+      "url": "https://weatherapp.com"
+    }
+  ]
+}
