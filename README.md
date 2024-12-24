@@ -1,16 +1,24 @@
-# Astro Nano
+# Mysite
 
-Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.
+Astro, Tailwind, Typscript portfolio site.
 
-Built with Astro, Tailwind and Typescript, an no frameworks.
+## To Do
 
-It was designed as an even more minimal theme than my popular theme [Astro Sphere](https://github.com/markhorn-dev/astro-sphere)
+- [ ] Change `Back` button on Resume to a Hovering `'X'` for better mobile compatability
+- [ ] Remove hue from header
+- [ ] Home Page - work XP
+  - [ ] better summary and highlights for work XP
+- [ ] add/remove icons `docker`, `bash`, etc
+- [ ] keep removing unnecessary cruft
+- [ ] add project
+  - [ ] measurements would be neat, paperJs + x-state
+    - [ ] project/measurements
+      - [ ] paperjs
+      - [ ] add react in, add xstate
+      - [ ]
+  - [ ] hearts terminal game would be neat!
 
 ## 💻 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, etc
 
 | Command                   | Action                                            |
 | :------------------------ | :------------------------------------------------ |
@@ -29,4 +37,3 @@ Replace npm with your package manager of choice. `npm`, `pnpm`, `yarn`, `bun`, e
 ## 🏛️ License
 
 MIT
-
