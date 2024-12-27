@@ -1,37 +1,112 @@
 ---
 title: "Measurement Tool"
 description: "Writing an interactive measurement tool with PaperJS and XState"
-date: "Mar 16 2024"
+date: "Dec 26 2024"
 ---
 
-### Example
+## Background
 
-Importing a component from a relative path to your content.
+For me, the easiest way of learning new frameworks or concepts is to mix something I already know with bits of what I'm trying
+to do for the first time. This is hopefully going to be my first published post. To make it as easy as possible I've decided to write about some work I at the beginning of 2024 at Bridgestone. I'm going to recreate that work and try to embed it into this Astro/MDX blog post
 
-This component will display an alert when you click the button.
+In early 2024 I was working at Bridgestone on an internal, global engineering platform. I picked up a relatively small/medium sized task of resuscitating an interactive measurement tool that would allow users to cast measurements on the screen between different points on a displayed tire cross section. This post is going to walk through re-implementing a portion of that feature in Astro.
 
-import MeasurementTool from "./component.astro";
+## Scope
 
-<MeasurementTool />
+- Enable/Disable Measuring Tool easily
+- Left-click to cast measurement start and stop points
+- Hover + Delete to remove a measurement
+- Click-Drag + Release to edit measurement point positions or to move the defined line segment
+- ... the rest depends on
 
----
+## Step 1: Client-Side State
 
-Nano is an extremely lightweight theme, with no frameworks, so there aren't
-any examples of react, vue, solid etc. You can integrate these frameworks using
-the guide below, and also use those components in your mdx files.
+Just to gain a foothold on how client-side state can work I added a simple counter to the page by
+simply installing `nanostores` and following the example in the docs: [Installing Nano Stores](https://docs.astro.build/en/recipes/sharing-state-islands/#installing-nano-stores)
 
-Don't forget to
-use the `client` directive to make them interactive.
-
-```astro
-<ReactComponent client:load />
+```bash
+npm install nanostores @nanostores/react
 ```
 
+then updating a few components:
+
+_./nanostores-counter/component.astro_
+
+```astro
+---
+import { Counter } from "./Counter";
+---
+<div>
+  <Counter client:load />
+</div>
+```
+
+_./nanostores-counter/clickStore.ts_
+
+```ts
+import { atom } from "nanostores";
+export const clickCount = atom(0);
+```
+
+_./nanostores-counter/Counter.tsx_
+
+```tsx
+import { useStore } from "@nanostores/react";
+import { clickCount } from "./clickStore";
+
+export const Counter = () => {
+  const $clickCount = useStore(clickCount);
+  const handleClick = () => clickCount.set($clickCount + 1);
+
+  return (
+    <>
+      <button onClick={handleClick}>Click Me</button>
+      <div># clicks: {$clickCount}</div>
+    </>
+  );
+};
+```
+
+_./index.mdx_
+
+```mdx
+import NanostoresCounter from "./nanostores-counter/component.astro";
+
+<NanostoresCounter />
+```
+
+Which yeilds:
+
 ---
 
-### More Links
+import NanostoresCounter from "./nanostores-counter/component.astro";
 
-- [MDX Syntax Documentation](https://mdxjs.com/docs/what-is-mdx)
-- [Astro Framework Integrations](https://docs.astro.build/en/guides/integrations-guide)
-- [Astro Usage Documentation](https://docs.astro.build/en/guides/markdown-content/#markdown-and-mdx-pages)
-- **Note:** [Client Directives](https://docs.astro.build/en/reference/directives-reference/#client-directives) are still required to create interactive components. Otherwise, all components in your MDX will render as static HTML (no JavaScript) by default.
+<NanostoresCounter />
+
+---
+
+## Directory Structure
+
+```bash
+|- blog-post/
+    |- index.mdx
+    |- nanostores-counter/
+        |- component.astro
+        |- clickStore.ts
+        |- Counter.tsx
+```
+
+First I'm going to move the Counter code
+
+## More Complex State w/ XState
+
+Initially all I want to do is to wire the `Counter.tsx`, button to an `xstate` machine and ensure that I can handle events. Once this is possible I'll feel pretty confident that I can handle all of the event traffic pretty easily.
+
+```bash
+npm install xstate
+```
+
+Now I just need to copy the `component.astro` and `Counter.tsx` into a new directory and wire them into an `xstate` machine. The `component.astro` code is exactly the same and is only being used to load my react `Counter.tsx` component. The `Counter.tsx` is updated as follows
+
+_./xstate-counter/Counter.tsx_
+`astro`
