@@ -73,7 +73,7 @@
       "url": "landiindustries.com",
       "startDate": "2021-9-01",
       "endDate": "2023-06-20",
-      "summary": "",
+      "summary": "First Staff-level position at a fast paced startup where I had a major voice in every technical software decision",
       "highlights": [
         "Served as Technical and Team Lead, overseeing a team of six developers. Distilled technical requirements, planned stories, scoped sprints and helped accomplish sprint goals."
       ],
@@ -107,7 +107,7 @@
       "url": "https://www.bridgestoneamericas.com/",
       "startDate": "2018-11-26",
       "endDate": "2021-09-21",
-      "summary": "",
+      "summary": "Made major contributions to a growing engineering platform that would later facilitate the design of every tire for a +20-billion dollar revenue tire company",
       "responsibilities": [
         "Designed and coordinated the implementation of large-scale features across a multi-national team, ensuring seamless collaboration and project success.",
         "Contributed to the optimization and expansion of a robust geometry engine (ex. vectorization of Cardano's method for intersections between Bezier curves and straight lines for a 100x speed improvement.)",
@@ -115,7 +115,9 @@
         "Developed initial React unit tests for a newly adopted framework, improving code reliability and maintainability.",
         "Prepared and delivered technical presentations to minimize system maintenance costs and enhanced training for peers."
       ],
-      "highlights": [],
+      "highlights": [
+        ""
+      ],
       "skills": [
         "Python",
         "Numpy",
@@ -140,7 +142,9 @@
         "Automated and improved upon the analysis of test results for development engineers",
         "Mentored other team members with regards to program architecture and 'pythonic' philosophy"
       ],
-      "highlights": [],
+      "highlights": [
+        "Threw out the first pitch at a professional baseball game in Taiwan"
+      ],
       "skills": [
         "AngularJS",
         "Angular",
@@ -181,10 +185,10 @@
       "summary": "Ensured that developed vehicles met targets for Noise and Vibration and passed all regulatory tests",
       "responsibilities": [
         "Planned, scheduled and coordinated detailed phases of large-scale projects",
-        "Assessed & adapted prototype model performance with respect to noise and vibration"
+        "Assessed & adapted prototype model performance with respect to noise and vibration",
+        "Simulation-driven design of intake and exhaust systems that were then prototyped, tuned and tested"
       ],
       "highlights": [
-        "Simulation-driven design of intake and exhaust systems that were then prototyped, tuned and tested",
         "Created an educational attenuation rig where visiting students could learn about sound and how intakes and exhausts are designed."
       ],
       "skills": [
@@ -228,17 +232,10 @@
       "score": "3.5"
     }
   ],
-  "certificates": [
-    {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
-    }
-  ],
+  "certificates": [],
   "skills": [
     {
-      "name": "Github",
+      "name": "GitHub",
       "level": "Intermediate",
       "keywords": [
         "Version Control",

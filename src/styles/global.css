@@ -223,3 +223,22 @@ html.scrolled #back-to-top {
     }
   }
 }
+
+@layer components {
+  aside.starlight-aside {
+      margin-top: 1rem;
+      padding: 1rem;
+      border-inline-start: 0.25rem solid #3347ff;
+      color: #fff;
+  }
+}
+
+
+
+/* aside.startlight-aside--note { */
+/*   background-color: #171d4f; */
+/* } */
+/* aside.starlight-aside--tip { */
+/*   background-color: 'red'; */
+/* } */
+

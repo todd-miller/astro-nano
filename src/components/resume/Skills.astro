@@ -3,8 +3,13 @@ import Section from "../Section.astro";
 import HTML from "@/icons/html.astro";
 import CSS from "@/icons/css.astro";
 import JavaScript from "@/icons/javascript.astro";
+import Cypress from "@/icons/Cypress.astro";
+import Numpy from "@/icons/Numpy.astro";
+import Python from "@/icons/Python.astro";
+import _Astro from "@/icons/Astro.astro";
 import TypeScript from "@/icons/type.astro";
 import React from "@/icons/react.astro";
+import Docker from "@/icons/docker.astro";
 import Node from "@/icons/node.astro";
 import MySQL from "@/icons/sql.astro";
 import Git from "@/icons/git.astro";
@@ -17,15 +22,23 @@ import SwiftUI from "@/icons/swiftui.astro";
 import Kotlin from "@/icons/kotlin.astro";
 import Flutter from "@/icons/flutter.astro";
 import Figma from "@/icons/Figma.astro";
-import Gitlab from "@/icons/Gitlab.astro";
+import MongoDB from "@/icons/mongodb.astro";
+import Bash from "@/icons/Bash.astro";
 
+interface Remap {
+  [key: string]: string;
+}
 const SKILLS_ICONS: Record<string, any> = {
 	HTML,
 	CSS,
+  _Astro,
+  Python,
+  Bash,
 	JavaScript,
 	TypeScript,
 	React,
 	Node,
+  Docker,
 	MySQL,
 	Git,
 	GitHub,
@@ -36,7 +49,9 @@ const SKILLS_ICONS: Record<string, any> = {
 	Kotlin,
 	Flutter,
 	Figma,
-	Gitlab,
+  MongoDB,
+  Cypress,
+  Numpy,
 };
 ---
 
@@ -44,8 +59,14 @@ const SKILLS_ICONS: Record<string, any> = {
 	<ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-6 [&>li>svg]:size-5 [&>li]:text-sm">
 		{
 			skills.map(({ name }) => {
-				const iconName = name === "Next.js" ? "Next" : name;
+        const remap: Remap = {
+          ["Next.js"]: "Next",
+          Astro: "_Astro"
+        };
+
+				const iconName = remap[name] ? remap[name] : name;
 				const Icon = SKILLS_ICONS[iconName];
+        console.log("Icon Name: ", iconName, Icon);
 
 				return (
 					<li class="border-skin-hue/20s bg-skin-button-accent/20s borders border-solids flex items-center gap-1 rounded-md px-2 py-0.5 text-xs text-skin-muted print:border-none print:bg-transparent print:p-0 print:text-zinc-800">

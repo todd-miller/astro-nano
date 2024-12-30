@@ -10,7 +10,7 @@ export const SITE: Site = {
 
 export const HOME: Metadata = {
   TITLE: "Home",
-  DESCRIPTION: "Astro Nano is a minimal and lightweight blog and portfolio.",
+  DESCRIPTION: "A small tech-blog and portfolio created using Astro and MDX.",
 };
 
 export const BLOG: Metadata = {
@@ -29,16 +29,12 @@ export const PROJECTS: Metadata = {
 };
 
 export const SOCIALS: Socials = [
-  // { 
-  //   NAME: "twitter-x",
-  //   HREF: "https://twitter.com/markhorn_dev",
-  // },
-  // { 
-  //   NAME: "github",
-  //   HREF: "https://github.com/markhorn-dev"
-  // },
-  // { 
-  //   NAME: "linkedin",
-  //   HREF: "https://www.linkedin.com/in/markhorn-dev",
-  // }
+  { 
+    NAME: "github",
+    HREF: "https://github.com/todd-miller"
+  },
+  { 
+    NAME: "linkedin",
+    HREF: "https://linkedin.com/in/todd-miller-a97030134",
+  }
 ];
