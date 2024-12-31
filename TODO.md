@@ -11,6 +11,10 @@
 
 - [ ] go over resume, especially summary, highlights and achievements
 
+## Project Ideas
+
+- [ ] home server (host project examples like Golang-chess, or python-shiit)
+
 ## Site
 
 I want more of my personal touch on things.
