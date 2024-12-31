@@ -5,6 +5,7 @@ import { work } from "@cv"
 import HTML from "@/icons/html.astro"
 import CSS from "@/icons/css.astro"
 import JavaScript from "@/icons/javascript.astro"
+import Docker from "@/icons/docker.astro";
 import TypeScript from "@/icons/type.astro"
 import React from "@/icons/react.astro"
 import Node from "@/icons/node.astro"
@@ -13,10 +14,14 @@ import Git from "@/icons/git.astro"
 import GitHub from "@/icons/GitHub.astro"
 import Tailwind from "@/icons/tailwind.astro"
 import Next from "@/icons/next.astro"
-import Swift from "@/icons/swift.astro"
-import SwiftUI from "@/icons/swiftui.astro"
-import Kotlin from "@/icons/kotlin.astro"
-import Flutter from "@/icons/flutter.astro"
+import Bash from "@icons/Bash.astro"
+import Mongodb from "@icons/mongodb.astro"
+import Python from "@icons/Python.astro"
+import Numpy from "@icons/Numpy.astro"
+
+interface Remap {
+  [key: string]: string;
+}
 
 const SKILLS_ICONS: Record<string, any> = {
   HTML,
@@ -30,10 +35,11 @@ const SKILLS_ICONS: Record<string, any> = {
   GitHub,
   Next,
   Tailwind,
-  Swift,
-  SwiftUI,
-  Kotlin,
-  Flutter,
+  Docker,
+  Bash,
+  Mongodb,
+  Python,
+  Numpy,
 }
 ---
 <Section className={Astro.props.className} title="Experience">
@@ -45,9 +51,9 @@ const SKILLS_ICONS: Record<string, any> = {
       return (
         <li class="relative print:py-2">
           <div class="group relative grid pb-1 print:pb-0 transition-all print:grid-cols-1 print:gap-1 sm:grid-cols-12 sm:gap-8 md:gap-6 lg:hover:!opacity-100 ">
-            <header class="relative mt-1 text-xs font-semibold sm:col-span-2">
+            <div class="relative mt-1 text-sm pr-2 font-semibold sm:col-span-2">
               <time datetime={startDate} data-title={startDate}>{startYear}</time> - <time datetime={endDate} data-title={endDate}>{endYear}</time>
-            </header>
+            </div>
             <div class="relative flex flex-col pb-6 print:pb-0 before:-ml-6 sm:col-span-10 before:w-px print:before:hidden before:absolute before:bg-skin-muted before:h-full before:mt-2">
             <div class="absolute w-2 h-2 bg-skin-muted rounded-full mt-2 -translate-x-[1.71rem] ring print:hidden ring-skin-fill"></div>
               <h3>
@@ -122,7 +128,11 @@ const SKILLS_ICONS: Record<string, any> = {
 
                 <ul class="flex print:hidden flex-wrap gap-2" aria-label="Technologies used">
                   {skills && skills.map(skill => {
-                    const iconName = skill === "Next.js" ? "Next" : skill
+                    const remap: Remap = {
+                      ["Next.js"]: "Next",
+                      Astro: "_Astro"
+                    };
+                    const iconName = remap[skill] ? remap[skill] : skill
                     const Icon = SKILLS_ICONS[iconName]
                     return (
                       <li class="bg-skin-button-accent/20 border-skin-hue/20 text-skin-hue print:p-0 print:bg-transparent print:text-zinc-800 flex gap-1 items-center border-solid print:border-none border rounded-md px-2 py-0.5 text-xs">

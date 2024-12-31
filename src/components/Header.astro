@@ -1,6 +1,10 @@
 ---
 import Container from "@components/Container.astro";
 import Link from "@components/Link.astro";
+import Sun from "@/icons/Sun.astro";
+import Moon from "@/icons/Moon.astro";
+import Computer from "@/icons/Computer.astro";
+import LightDarkToggle from "@icons/LightDarkToggle.astro";
 import { SITE } from "@consts";
 ---
 
@@ -29,6 +33,38 @@ import { SITE } from "@consts";
           projects
         </Link>
       </nav>
+      <div class="flex flex-wrap gap-1 items-center">
+        <button 
+          class="theme-toggle"
+          id="theme-toggle"
+          title="Toggles light & dark" 
+          aria-label="auto" 
+          aria-live="polite"
+        >
+          <LightDarkToggle />
+        </button>
+        <!-- <button -->
+        <!--   id="light-theme-button" -->
+        <!--   aria-label="Light theme" -->
+        <!--   class="group size-8 flex items-center justify-center rounded-full" -->
+        <!-- > -->
+        <!--   <Sun />  -->
+        <!-- </button> -->
+        <!-- <button -->
+        <!--   id="dark-theme-button" -->
+        <!--   aria-label="Dark theme" -->
+        <!--   class="group size-8 flex items-center justify-center rounded-full" -->
+        <!-- > -->
+        <!--   <Moon />  -->
+        <!-- </button> -->
+        <!-- <button -->
+        <!--   id="system-theme-button" -->
+        <!--   aria-label="System theme" -->
+        <!--   class="group size-8 flex items-center justify-center rounded-full" -->
+        <!-- > -->
+        <!--   <Computer/>  -->
+        <!-- </button> -->
+      </div>
     </div>
   </Container>
 </header>

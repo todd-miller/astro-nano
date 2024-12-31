@@ -18,6 +18,11 @@ export const BLOG: Metadata = {
   DESCRIPTION: "A collection of articles on topics I am passionate about.",
 };
 
+export const NOTES: Metadata = {
+  TITLE: "Notes",
+  DESCRIPTION: "A collection of notes on topics I want to keep as reference.",
+};
+
 export const WORK: Metadata = {
   TITLE: "Work",
   DESCRIPTION: "Where I have worked and what I have done.",

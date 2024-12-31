@@ -5,31 +5,23 @@ import About from "@/components/resume/About.astro";
 import Education from "@/components/resume/Education.astro";
 import Experience from "@/components/resume/Experience.astro";
 import Hero from "@/components/resume/Hero.astro";
-import Projects from "@/components/resume/Projects.astro";
 import Skills from "@/components/resume/Skills.astro";
-import Tail from "@/components/resume/Tail.astro";
-import ThemeSwitch from "@/components/resume/ThemeSwitch.astro";
-import BackToPrev from "@components/BackToPrev.astro";
 
 import { basics } from "@cv";
 const { name, label } = basics;
 ---
 
-<Layout title={`${name} Portafolio - ${label}`}>
+<Layout title={`${name} Resume - ${label}`}>
 	<main class="relative grid max-w-7xl gap-12 p-8 max-sm:py-16 md:grid-cols-6 md:p-16 xl:gap-24 print:max-w-none print:grid-cols-1 print:gap-6">
 		<div class="space-y-6 md:col-span-2 print:col-span-1 print:grid print:grid-cols-2 print:gap-5 print:space-y-0">
 			<Hero />
-      <ThemeSwitch />
 			<About />
-      <BackToPrev href="/">Back</BackToPrev>
 		</div>
 		<div class="space-y-12 md:col-span-4 print:col-span-1 print:grid print:grid-cols-4 print:gap-2 print:space-y-0">
 			<Experience className="print:col-span-3" />
-			<Projects className="print:hidden" />
 			<Skills className="print:hidden" />
 			<Education className="order-first" />
 		</div>
-		<Tail />
 	</main>
 
 </Layout>
