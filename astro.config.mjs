@@ -9,12 +9,12 @@ import expressiveCode from "astro-expressive-code";
 export default defineConfig({
   site: "https://astro-nano-demo.vercel.app",
   integrations: [
-    starlight({
-      title: "Todd's Portfolio",
-      customCss: [
-        './src/styles/global.css'
-      ]
-    }),
+    // starlight({
+    //   title: "Todd's Portfolio",
+    //   customCss: [
+    //     './src/styles/global.css'
+    //   ]
+    // }),
     // expressiveCode(),
     mdx(),
     sitemap(),
