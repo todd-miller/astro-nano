@@ -1,22 +1,13 @@
-# Mysite
+# My Site
 
-Astro, Tailwind, Typscript portfolio site.
+Astro, Tailwind, Typescript portfolio site.
 
 ## To Do
 
-- [ ] Change `Back` button on Resume to a Hovering `'X'` for better mobile compatability
-- [ ] Remove hue from header
+- [ ] Change `Back` button on Resume to a Hovering `'X'` for better mobile compatibility
 - [ ] Home Page - work XP
   - [ ] better summary and highlights for work XP
-- [ ] add/remove icons `docker`, `bash`, etc
-- [ ] keep removing unnecessary cruft
-- [ ] add project
-  - [ ] measurements would be neat, paperJs + x-state
-    - [ ] project/measurements
-      - [ ] paperjs
-      - [ ] add react in, add xstate
-      - [ ]
-  - [ ] hearts terminal game would be neat!
+- [ ] add project -> hearts terminal game would be neat!
 
 ## 💻 Commands
 
